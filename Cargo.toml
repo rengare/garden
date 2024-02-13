@@ -7,3 +7,19 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.5.0", features = ["env", "derive"] }
+directories = "5.0.1"
+edit = "0.1.5"
+miette = { version = "7.0.0", features = ["fancy"] }
+owo-colors = "4.0.0"
+rprompt = "2.1.1"
+slug = "0.1.5"
+tempfile = "3.10.0"
+thiserror = "1.0.57"
+
+[dev-dependencies]
+assert_cmd = "2.0.13"
+assert_fs = "1.1.1"
+predicates = "3.1.0"
+
+[target.'cfg(not(windows))'.dev-dependencies]
+rexpect = "0.5.0"
